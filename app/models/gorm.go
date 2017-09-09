@@ -1,10 +1,10 @@
 package models
 
 import (
-	"net/url"
-	"github.com/revel/revel"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
+	"github.com/revel/revel"
+	"net/url"
 )
 
 var (

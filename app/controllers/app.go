@@ -1,9 +1,9 @@
 package controllers
 
 import (
-	"strconv"
 	"github.com/revel/revel"
 	"revel-test1/app/models"
+	"strconv"
 )
 
 type App struct {
