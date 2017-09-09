@@ -2,6 +2,7 @@ package app
 
 import (
 	"github.com/revel/revel"
+	"revel-test1/app/models"
 )
 
 var (
@@ -35,6 +36,7 @@ func init() {
 	// ( order dependent )
 	// revel.OnAppStart(ExampleStartupScript)
 	// revel.OnAppStart(InitDB)
+	revel.OnAppStart(models.InitDB)
 	// revel.OnAppStart(FillCache)
 }
 

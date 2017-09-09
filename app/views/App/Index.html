@@ -6,6 +6,11 @@
     <div class="row">
       <h1>It works!</h1>
       <p>はじめまして、{{.userName}}({{.age}})。Revelアプリケーションへようこそ！</p>
+      {{range .memos}}
+        <li>
+          {{.Text}}
+        </li>
+      {{end}}
     </div>
   </div>
 </header>
