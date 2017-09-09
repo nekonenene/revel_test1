@@ -9,5 +9,8 @@ type App struct {
 }
 
 func (c App) Index() revel.Result {
-	return c.Render()
+	userName := "夏目さん"
+	age := 14
+
+	return c.Render(userName, age)
 }
