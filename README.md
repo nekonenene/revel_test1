@@ -1,15 +1,26 @@
-# Welcome to Revel
+# Revel であれこれ
 
-A high-productivity web framework for the [Go language](http://www.golang.org/).
+## Start the web server:
+
+```
+revel run revel_test1
+```
+
+そして http://localhost:9000 へ
 
 
-### Start the web server:
+## 気付き
 
-   revel run myapp
+* GORM、CRUDがあんまり直感的な書き方じゃないように思える。[SQLBoiler](https://github.com/volatiletech/sqlboiler)のほうがその点はうまく出来てる。
+* `Gorm, err := gorm.Open` だとスコープが関数内になるのはハマりどころだった。  
+`Gorm, err = gorm.Open` とするのが正しい。
+* Railsの迷わず作れる良さを改めて感じるのだった……
 
-### Go to http://localhost:9000/ and you'll see:
 
-    "It works"
+## メモ
+
+* `go fmt ./**/*.go` をたまにして矯正
+
 
 ## Code Layout
 
@@ -34,10 +45,17 @@ The directory structure of a generated Revel application:
     tests/            Test suites
 
 
-## Help
+## リンク集
 
-* The [Getting Started with Revel](http://revel.github.io/tutorial/gettingstarted.html).
-* The [Revel guides](http://revel.github.io/manual/index.html).
-* The [Revel sample apps](http://revel.github.io/examples/index.html).
-* The [API documentation](https://godoc.org/github.com/revel/revel).
+### Revel
 
+* [GitHub](https://github.com/revel/revel)
+* [チュートリアル](http://revel.github.io/tutorial/gettingstarted.html)
+* [ガイド](http://revel.github.io/manual/index.html)
+* [サンプル集](http://revel.github.io/examples/index.html)
+* [ドキュメント](https://godoc.org/github.com/revel/revel)
+
+### GORM
+
+* [GitHub](https://github.com/jinzhu/gorm)
+* [ガイド](http://jinzhu.me/gorm/)
